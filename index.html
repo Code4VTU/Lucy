@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+
+                html,body,* {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                /* Header */
+
+                header {
+                    padding-top: 20px;
+                    background-image: url("Images/banner.png") ;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-attachment: fixed;
+                }
+
+
+                #logo {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
+					animation-name: spin1;
+                    animation-duration: 1s;
+                }
+
+                #logo:hover {
+                    animation-name: spin;
+                    animation-duration: 1s;
+
+                }
+
+                
+                @keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+
+                    @-moz-keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+
+                    @-o-keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+
+                    @-ms-keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+					
+					@keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+                    @-moz-keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+                    @-o-keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+                    @-ms-keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+
+                #text {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+
+                /* Benefits */
+
+                #wrapper {
+                    float:left;
+                    display: block;
+                    width: 100%;
+                    background-color: #c6d729;
+                }
+
+                #intr {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                div div .ul {
+                    display: block;
+                    width: 200px;
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 10%;
+                    float: left; 
+                    padding: 0 20px 20px 20px;
+                    
+                }
+
+                #left {
+                    margin: 0% 1% 1% 0%;
+					float: left;
+                }
+
+                #center {
+                    margin: 0% 1% 1% 1%;
+					 float:center; 
+                }
+
+                #right {
+                    margin: 0% 0% 1% 1%; 
+					float:right;
+                }
+
+
+
+                @font-face {
+                    font-family: Font;
+                    src: url(Fonts/ds_standartcyr.ttf);
+                }
+
+
+
+                #benefits .ul p {
+                    text-align: center;
+                    margin-top: 20px;
+                    font-family: Font;
+                }
+
+                div div div img {
+                    display: block;
+                    width: 200px;
+                }
+               
+
+                #benefits {
+                    background-color: #c6d729;
+                    display: block;
+                    width: 100%; 
+                    margin: 0 auto;
+					padding-top:1%;
+					text-align:center;
+                }
+
+
+            </style>
+    </head>
+
+
+<body>
+
+<header>
+        <img id="logo" src="Images/kys.png" /> 
+        <img id="text" src="Images/slogan.png" />
+</header>
+
+
+<div id="wrapper">
+    <!-- <img id="intr" src="introduction.png" /> -->
+    <div id="benefits">
+        <div id="left" class="ul">
+            <img id="bleft" src="Images/bring.png" />
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem
+                por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+       </div>
+       <div id="center" class="ul">
+            <img src="Images/help.png" />
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem
+                por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+       </div>
+       <div id="right" class="ul">
+            <img id="bright" src="Images/get.png" /> 
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem
+                por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  </p>
+      </div>
+    </div>
+</div>
+
+
+</body>
+</html>

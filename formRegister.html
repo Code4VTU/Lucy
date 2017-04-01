@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			header {
+                    padding-top: 20px;
+                    background-image: url("banner.png") ;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-attachment: fixed;
+                }
+
+
+                #logo {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
+					animation-name: spin1;
+                    animation-duration: 1s;
+                }
+
+                #logo:hover {
+                    animation-name: spin;
+                    animation-duration: 1s;
+
+                }
+
+                
+                @keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+
+                    @-moz-keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+
+                    @-o-keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+
+                    @-ms-keyframes spin{
+                        0%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                    }
+					
+					@keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+                    @-moz-keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+                    @-o-keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+                    @-ms-keyframes spin1{
+                        0%{
+                        -moz-transform: rotateZ(50deg);
+                        -webkit-transform: rotateZ(50deg);
+                        -o-transform: rotateZ(50deg);
+                        -ms-transform: rotateZ(50deg);
+                        }
+                        100%{
+                        -moz-transform: rotateZ(0deg);
+                        -webkit-transform: rotateZ(0deg);
+                        -o-transform: rotateZ(0deg);
+                        -ms-transform: rotateZ(0deg);
+                        }
+                    }
+
+
+                #text {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+				 /* Benefits */
+
+                #wrapper {
+                    float:left;
+                    display: block;
+                    width: 100%;
+                    background-color: #c6d729;
+                }
+
+                #intr {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                div div .ul {
+                    display: block;
+                    width: 200px;
+                    background-color: #c6d729;
+                    float: left; 
+                    margin: 0 5px;
+                    padding: 0 20px 20px 20px;
+                    
+                }
+
+                #benefits .ul p {
+                    text-align: center;
+                }
+
+                div div div img {
+                    display: block;
+                    width: 200px;
+                }
+                
+                #left {
+                    margin-left: 0;
+                }
+
+                #right {
+                    margin-right: 0;
+                }
+
+                #benefits {
+                    background-color: #c6d729;
+                    display: block;
+                    width: 55%; 
+                    margin: 0 auto;
+                }
+
+
+		</style>
+	</head>
+	<body>
+	
+		<header>
+			<img id="logo" src="kys.png" /> 
+			<img id="text" src="slogan.png" />
+		</header>
+
+	<div>
+		<form action="">
+			<label for="organisation">Organisation</label>
+			<input type="radio" name="organisation" id="organisation" value="organisation">
+			<label for="restaurant">Restaurant</label>
+			<input type="radio" name="organisation" id="restaurant" value="restaurant">
+			<br/>
+			<label for="name">Name</label>
+			<input type="text" name="name" value="" id="name">
+			<br/>
+			<label for="country">Country</label>
+			<input type="text" name="country" id="country" value="">
+			<br/>
+			<label for="town">Town</label>
+			<input type="text" name="town" id="town" value="">
+			<br/>
+			<label for="address">Address</label>
+			<input type="text" name="address" value="" id="address">
+			<br/>
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email">
+			<br/>
+			<label for="phoneNumber">Phone number</label>
+			<input type="text" name="phoneNumber"  id="phoneNumber" pattern="[0-9]{1-12}" >
+			<br/>
+			<label>Description</label>
+			<textarea rows="4" cols="50">
+			
+			</textarea>
+			<br/>
+
+			<input type="submit" value="Submit">
+			</div>
+</form>
+	</body>
+</html>
