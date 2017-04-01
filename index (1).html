@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script>
+            function submitForm(){
+            var organisation = document.getElementById("organisation").value;
+            var restaurant = document.getElementById("restaurant").value;
+            var name = document.getElementById("name").value;
+            var country = document.getElementById("country").value;
+            var town = document.getElementById("town").value;
+            var address = document.getElementById("address").value;
+            var email = document.getElementById("email").value;
+            var phoneNum = document.getElementById("phoneNumber").value;
+            var description = document.getElementById("description").value;
+
+            if(document.getElementById("organisation").checked && document.getElementById("restaurant").checked){
+               alert("Choose between organisation and restaurant");
+            } else if (name == ""){
+               alert("Enter your name");
+            } else if (country == ""){
+               alert("Enter your countrys");
+            } else if (town == ""){
+                alert("Enter town");
+            } else if (address == ""){
+                alert("Enter address");
+            } else if (town == ""){
+                alert("Enter town");
+            } else if (email == ""){
+                alert("Enter email");
+            } else if (phoneNum == ""){
+                alert("Enter phoneNum");
+            } else if (description == ""){
+                alert("Enter description");
+            } else {
+                if(organisation.value == true){
+                    var element = document.getElementById("regdiv");
+                    element.appendChild(name);
+                    element.appendChild(country);
+                    element.appendChild(town);
+                    element.appendChild(address);
+                    element.appendChild(email);
+                    element.appendChild(phoneNum);
+                    element.appendChild(description);
+                }
+            }
+
+          //  para.appendChild(node);
+
+               registration.appendChild(node);
+            /*if(organisation == true)
+            {
+                var par = document.createElement("p");
+                var node = document.createTextNode("Its organisation");
+                par.appendChild(node);
+                var element = document.getElementById("organisation");
+                element.appendChild(par);
+            }
+
+            var par = document.createElement("p");
+            var node = document.createTextNode("Its organisation");
+            par.appendChild(node);
+            var element = document.getElementById("organisation");
+            element.appendChild(par);*/
+            }
+        </script>
+        
+            <style>
+
+                html,body,* {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                /* Header */
+
+                header {
+                    padding-top: 20px;
+                    background-image: url("Images/banner.png") ;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-attachment: fixed;
+                }
+
+
+                #logo {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin-left: auto;
+                    margin-right: auto;
+					transform: rotate(0deg);
+					transition: all 0.5s linear;
+                }
+
+                #logo:hover {
+                    animation-name: spin;
+                    animation-duration: 1s;
+					transform: rotate(50deg) scale(1.2);
+					
+                }
+
+				#text{
+					display:none;
+				}
+				@media only screen and (min-width: 620px){
+                #text {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }}
+
+                /* Benefits */
+
+                #wrapper {
+                    float:left;
+                    display: block;
+                    width: 100%;
+                    background-color: #c6d729;
+                }
+
+                #intr {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                div div .ul {
+                    display: block;
+                    width: 200px;
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 10%;
+                    float: left; 
+                    padding: 0 20px 20px 20px;
+                    
+                }
+
+                #left {
+                    margin: 0% 1% 3% auto;
+					float: left;
+                }
+
+                #center {
+                    margin: 0% 1% 3% 1%;
+					 
+                }
+
+                #right {
+                    margin: 0% auto 3% 1%; 
+					float:right;
+                }
+
+
+
+                @font-face {
+                    font-family: Font;
+                    src: url(Fonts/ds_standartcyr.ttf);
+                }
+
+
+
+                #benefits .ul p {
+                    text-align: center;
+                    margin-top: 30px;
+                    font-family: Font;
+					font-size:20px;
+                }
+
+                div div div img {
+                    display: block;
+                    width: 200px;
+                }
+               
+
+                #benefits {
+                    background-color: #c6d729;
+                    display: block;
+                    width: 56%; 
+                    margin: 0 auto;
+					padding-top:3%;
+					text-align:center;
+                }
+
+                /* Form */
+
+                #wrap {
+                    background-color: #c6d729;
+                    padding: 20px;
+                    clear: both;
+                }
+
+                form {
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 20px;
+                    display: block;
+                    width: 600px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                @font-face {
+                    font-family: Font;
+                    src: url(ds_standartcyr.ttf);
+                }
+
+                .left {
+                    float: left;
+                }
+
+                .right {
+                    float: right;
+                }
+
+                .margin {
+                    margin: 20px;
+                }
+
+                #submit {
+                    float: right;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                }
+
+                #buttons {
+                    display: block;
+                    width: 130px;
+                    margin: 0 auto;
+                }
+
+                button {
+                    padding: 5px;
+                    border-radius: 10px;
+                    background-color: rgba(255,255,255,0.3);
+                    color: #9c383a;
+                    border: 2px solid #9c383a; /* Green */
+                }
+
+				#colums div.ul
+				{
+                    display: block;
+                    width: 200px;
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 10%;
+                    float: left; 
+                    padding: 0 20px 20px 20px;
+                    
+                
+				}
+
+                /* Columns */
+
+                #columns {
+                    background-color: #c6d729;
+                    width: 100%;
+                    float: left;
+
+                }
+
+                #res {
+                    display: block;
+                    float: left;
+                    margin: 20px 20px 20px 10%;
+                }
+
+                #org {
+                    display: block;
+                    float: right;
+                    margin: 20px 10% 20px 20px ;
+                }
+
+                .ul {
+                    display: block;
+                    width: 400px;
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 20px;
+                    float: left;
+                    padding: 30px;
+                }
+
+
+
+            </style>
+    </head>
+
+
+<body>
+
+<header>
+        <img id="logo" src="Images/kys.png" /> 
+        <img id="text" src="Images/slogan.png" />
+</header>
+
+
+<div id="wrapper">
+    <!-- <img id="intr" src="introduction.png" /> -->
+    <div id="benefits">
+        <div id="left" class="ul">
+            <img id="bleft" src="Images/bring.png" />
+            <p> Take the excess food from a restaurant nearby. </p>
+       </div>
+       <div id="center" class="ul">
+            <img src="Images/help.png" />
+            <p> Deliver a meal to somebody in need.</p>
+       </div>
+       <div id="right" class="ul">
+            <img id="bright" src="Images/get.png" /> 
+            <p> Receive a 10% discount from your next order.  </p>
+      </div>
+    </div>
+</div>
+
+
+
+<div id="columns">
+   
+               <div id="res" class="ul">
+                        <h1> Restaurants </h1>
+                        <p> Lorem ipsum dolor sit amet, nec te alii ancillae disputation
+                            i. Sed quodsi accumsan temporibus ad. Te has case probo, novum possit 
+                            molestiae an eos. At magn
+                            a omnium laoreet vim, eum te quando suavitate, eu erat dolorem vix. Ei
+                            rmod eloquentiam an eam, duo audiam electram ut.
+                    </p>
+                </div>
+                <div id="res" class="ul">
+                        <h1> Organisations </h1>
+                        <p> Lorem ipsum dolor sit amet, nec te alii ancillae disputation
+                            i. Sed quodsi accumsan temporibus ad. Te has case probo, novum possit 
+                            molestiae an eos. At magn
+                            a omnium laoreet vim, eum te quando suavitate, eu erat dolorem vix. Ei
+                            rmod eloquentiam an eam, duo audiam electram ut.
+                        </p>
+                </div>
+   
+</div>
+
+
+
+<div id="wrap">
+		<form id="form" action="">
+                <label style="margin-left:18px" for="organisation"> Organisation </label>
+                <input type="radio" name="organisation" id="organisation" value="organisation">
+                <label style="margin-left:18px" for="restaurant"> Restaurant </label>
+                <input type="radio" name="organisation" id="restaurant" value="restaurant">
+			<br/>
+                <div class="margin">
+                    <label class="left" for="name"> Name </label>
+                    <input class="right" type="text" name="name" value="" id="name">
+                </div>
+			<br/>
+                <div class="margin">
+                    <label class="left" for="country"> Country </label>
+                    <input class="right" type="text" name="country" id="country" value="">
+                </div>
+			<br/>
+                <div class="margin">
+                    <label class="left" for="town"> Town </label>
+                    <input class="right" type="text" name="town" id="town" value="">
+                </div>
+			<br/>
+                <div class="margin">
+                    <label class="left" for="address"> Address  </label>
+                    <input class="right" type="text" name="address" value="" id="address">
+                </div>
+			<br/>
+                <div class="margin">
+                    <label class="left" for="email">  E-mail  </label>
+                    <input class="right" type="email" name="email" id="email">
+                </div>
+			<br/>
+                <div class="margin">
+                    <label class="left" for="phoneNumber">  Phone number </label>
+                    <input class="right" type="text" name="phoneNumber"  id="phoneNumber" pattern="[0-9]{1-12}" >
+                </div>
+			<br/>
+                <div class="margin">
+                    <label class="left" > Description  </label>
+                    <textarea class="right" rows="4" cols="50"> </textarea>
+                </div>
+			<br/>
+            <br/>
+            <br/>
+            <br/>
+            <div id="buttons"> 
+                <button value="Back"> Back </button>
+                <button type="submit" form="form" value="Submit"> Submit </button>
+            </div>
+</form>
+</div>
+
+
+
+
+
+</body>
+</html>

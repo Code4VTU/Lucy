@@ -12,7 +12,7 @@
 
                 header {
                     padding-top: 20px;
-                    background-image: url("Images/banner.png") ;
+                    background-image: url("banner.png") ;
                     background-repeat: no-repeat;
                     background-position: center;
                     background-attachment: fixed;
@@ -25,8 +25,6 @@
                     height: 200px;
                     margin-left: auto;
                     margin-right: auto;
-					animation-name: spin1;
-                    animation-duration: 1s;
                 }
 
                 #logo:hover {
@@ -95,66 +93,6 @@
                         -ms-transform: rotateZ(50deg);
                         }
                     }
-					
-					@keyframes spin1{
-                        0%{
-                        -moz-transform: rotateZ(50deg);
-                        -webkit-transform: rotateZ(50deg);
-                        -o-transform: rotateZ(50deg);
-                        -ms-transform: rotateZ(50deg);
-                        }
-                        100%{
-                        -moz-transform: rotateZ(0deg);
-                        -webkit-transform: rotateZ(0deg);
-                        -o-transform: rotateZ(0deg);
-                        -ms-transform: rotateZ(0deg);
-                        }
-                    }
-
-                    @-moz-keyframes spin1{
-                        0%{
-                        -moz-transform: rotateZ(50deg);
-                        -webkit-transform: rotateZ(50deg);
-                        -o-transform: rotateZ(50deg);
-                        -ms-transform: rotateZ(50deg);
-                        }
-                        100%{
-                        -moz-transform: rotateZ(0deg);
-                        -webkit-transform: rotateZ(0deg);
-                        -o-transform: rotateZ(0deg);
-                        -ms-transform: rotateZ(0deg);
-                        }
-                    }
-
-                    @-o-keyframes spin1{
-                        0%{
-                        -moz-transform: rotateZ(50deg);
-                        -webkit-transform: rotateZ(50deg);
-                        -o-transform: rotateZ(50deg);
-                        -ms-transform: rotateZ(50deg);
-                        }
-                        100%{
-                        -moz-transform: rotateZ(0deg);
-                        -webkit-transform: rotateZ(0deg);
-                        -o-transform: rotateZ(0deg);
-                        -ms-transform: rotateZ(0deg);
-                        }
-                    }
-
-                    @-ms-keyframes spin1{
-                        0%{
-                        -moz-transform: rotateZ(50deg);
-                        -webkit-transform: rotateZ(50deg);
-                        -o-transform: rotateZ(50deg);
-                        -ms-transform: rotateZ(50deg);
-                        }
-                        100%{
-                        -moz-transform: rotateZ(0deg);
-                        -webkit-transform: rotateZ(0deg);
-                        -o-transform: rotateZ(0deg);
-                        -ms-transform: rotateZ(0deg);
-                        }
-                    }
 
 
                 #text {
@@ -183,32 +121,29 @@
                     display: block;
                     width: 200px;
                     background-color: rgba(255,255,255,0.3);
-                    border-radius: 10%;
+                    border-radius: 20px;
                     float: left; 
                     padding: 0 20px 20px 20px;
                     
                 }
 
                 #left {
-                    margin: 0% 1% 1% 0%;
-					float: left;
+                    margin: 0px 10px 10px 0px;
                 }
 
                 #center {
-                    margin: 0% 1% 1% 1%;
-					 float:center; 
+                    margin: 0px 10px 10px 10px;
                 }
 
                 #right {
-                    margin: 0% 0% 1% 1%; 
-					float:right;
+                    margin: 0px 0px 10px 10px; 
                 }
 
 
 
                 @font-face {
                     font-family: Font;
-                    src: url(Fonts/ds_standartcyr.ttf);
+                    src: url(ds_standartcyr.ttf);
                 }
 
 
@@ -223,15 +158,21 @@
                     display: block;
                     width: 200px;
                 }
-               
+                
+                #left {
+                    margin-left: 0;
+                }
+
+                #right {
+                    margin-right: 0;
+                }
 
                 #benefits {
                     background-color: #c6d729;
                     display: block;
-                    width: 100%; 
+                    width: 56.5%; 
                     margin: 0 auto;
-					padding-top:1%;
-					text-align:center;
+                    padding-top: 20px;
                 }
 
 
@@ -242,8 +183,8 @@
 <body>
 
 <header>
-        <img id="logo" src="Images/kys.png" /> 
-        <img id="text" src="Images/slogan.png" />
+        <img id="logo" src="kys.png" /> 
+        <img id="text" src="slogan.png" />
 </header>
 
 
@@ -251,17 +192,17 @@
     <!-- <img id="intr" src="introduction.png" /> -->
     <div id="benefits">
         <div id="left" class="ul">
-            <img id="bleft" src="Images/bring.png" />
+            <img id="bleft" src="bring.png" />
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem
                 por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
        </div>
        <div id="center" class="ul">
-            <img src="Images/help.png" />
+            <img src="help.png" />
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem
                 por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
        </div>
        <div id="right" class="ul">
-            <img id="bright" src="Images/get.png" /> 
+            <img id="bright" src="get.png" /> 
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem
                 por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  </p>
       </div>

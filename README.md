@@ -1,3 +1,1 @@
-cherry project
-
-adding info
+"# Hakaton-2017" 

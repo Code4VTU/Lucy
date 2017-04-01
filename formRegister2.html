@@ -1,72 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <script>
-            function submitForm(){
-            var organisation = document.getElementById("organisation").value;
-            var restaurant = document.getElementById("restaurant").value;
-            var name = document.getElementById("name").value;
-            var country = document.getElementById("country").value;
-            var town = document.getElementById("town").value;
-            var address = document.getElementById("address").value;
-            var email = document.getElementById("email").value;
-            var phoneNum = document.getElementById("phoneNumber").value;
-            var description = document.getElementById("description").value;
-
-            if(document.getElementById("organisation").checked && document.getElementById("restaurant").checked){
-               alert("Choose between organisation and restaurant");
-            } else if (name == ""){
-               alert("Enter your name");
-            } else if (country == ""){
-               alert("Enter your countrys");
-            } else if (town == ""){
-                alert("Enter town");
-            } else if (address == ""){
-                alert("Enter address");
-            } else if (town == ""){
-                alert("Enter town");
-            } else if (email == ""){
-                alert("Enter email");
-            } else if (phoneNum == ""){
-                alert("Enter phoneNum");
-            } else if (description == ""){
-                alert("Enter description");
-            } else {
-                if(organisation.value == true){
-                    var element = document.getElementById("regdiv");
-                    element.appendChild(name);
-                    element.appendChild(country);
-                    element.appendChild(town);
-                    element.appendChild(address);
-                    element.appendChild(email);
-                    element.appendChild(phoneNum);
-                    element.appendChild(description);
-                }
-            }
-
-          //  para.appendChild(node);
-
-               registration.appendChild(node);
-            /*if(organisation == true)
-            {
-                var par = document.createElement("p");
-                var node = document.createTextNode("Its organisation");
-                par.appendChild(node);
-                var element = document.getElementById("organisation");
-                element.appendChild(par);
-            }
-
-            var par = document.createElement("p");
-            var node = document.createTextNode("Its organisation");
-            par.appendChild(node);
-            var element = document.getElementById("organisation");
-            element.appendChild(par);*/
-            }
-        </script>
 		<style>
+
+            *, body {
+                padding: 0;
+                margin: 0;
+            }
+
 			header {
                     padding-top: 20px;
-                    background-image: url("banner.png") ;
+                    background-image: url("Images/banner.png") ;
                     background-repeat: no-repeat;
                     background-position: center;
                     background-attachment: fixed;
@@ -218,52 +162,125 @@
 
                 }
 				 
-                form {
-                    background-color: #e2ee75; 
+                #wrap {
+                    background-color: #c6d729;
+                    padding: 20px;
                 }
 
+                form {
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 20px;
+                    display: block;
+                    width: 600px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                @font-face {
+                    font-family: Font;
+                    src: url(ds_standartcyr.ttf);
+                }
+
+                label p {
+                    font-family: Font;
+                }
+
+                #test {
+                    font-family: Font;
+                }
+
+                .left {
+                    float: left;
+                }
+
+                .right {
+                    float: right;
+                }
+
+                .margin {
+                    margin: 20px;
+                }
+
+                #submit {
+                    float: right;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                }
+
+                #buttons {
+                    display: block;
+                    width: 130px;
+                    margin: 0 auto;
+                }
+
+                button {
+                    padding: 5px;
+                    border-radius: 10px;
+                    background-color: rgba(255,255,255,0.3);
+                    color: #9c383a;
+                    border: 2px solid #9c383a; /* Green */
+                }
 
 		</style>
 	</head>
 	<body>
 	
 		<header>
-			<img id="logo" src="kys.png" /> 
-			<img id="text" src="slogan.png" />
+			<img id="logo" src="Images/kys.png" /> 
+			<img id="text" src="Images/slogan.png" />
 		</header>
 
-	<div id="regdiv">
-		<form>
-                <label for="organisation">Organisation</label>
+	<div id="wrap">
+		<form id="form" action="">
+                <label style="margin-left:18px" for="organisation"> Organisation </label>
                 <input type="radio" name="organisation" id="organisation" value="organisation">
-                
-                <label for="restaurant">Restaurant</label>
+                <label style="margin-left:18px" for="restaurant"> Restaurant </label>
                 <input type="radio" name="organisation" id="restaurant" value="restaurant">
 			<br/>
-                <label for="name">Name</label>
-                <input type="text" name="name" value="" id="name">
+                <div class="margin">
+                    <label class="left" for="name"> Name </label>
+                    <input class="right" type="text" name="name" value="" id="name">
+                </div>
 			<br/>
-                <label for="country">Country</label>
-                <input type="text" name="country" id="country" value="">
+                <div class="margin">
+                    <label class="left" for="country"> Country </label>
+                    <input class="right" type="text" name="country" id="country" value="">
+                </div>
 			<br/>
-                <label for="town">Town</label>
-                <input type="text" name="town" id="town" value="">
+                <div class="margin">
+                    <label class="left" for="town"> Town </label>
+                    <input class="right" type="text" name="town" id="town" value="">
+                </div>
 			<br/>
-                <label for="address">Address</label>
-                <input type="text" name="address" value="" id="address">
+                <div class="margin">
+                    <label class="left" for="address"> Address  </label>
+                    <input class="right" type="text" name="address" value="" id="address">
+                </div>
 			<br/>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <div class="margin">
+                    <label class="left" for="email">  E-mail  </label>
+                    <input class="right" type="email" name="email" id="email">
+                </div>
 			<br/>
-                <label for="phoneNumber">Phone number</label>
-                <input type="text" name="phoneNumber"  id="phoneNumber" pattern="[0-9]{1-12}" >
+                <div class="margin">
+                    <label class="left" for="phoneNumber">  Phone number </label>
+                    <input class="right" type="text" name="phoneNumber"  id="phoneNumber" pattern="[0-9]{1-12}" >
+                </div>
 			<br/>
-                <label>Description</label>
-                <textarea rows="4" cols="50" id="description"> </textarea>
+                <div class="margin">
+                    <label class="left" > Description  </label>
+                    <textarea class="right" rows="4" cols="50"> </textarea>
+                </div>
 			<br/>
-			<input type = "button" name="btn" onclick="submitForm()" value="Submit">
-			</div>
+            <br/>
+            <br/>
+            <br/>
+            <div id="buttons"> 
+                <button value="Back"> Back </button>
+                <button type="submit" form="form" value="Submit"> Submit </button>
+            </div>
 </form>
+</div>
 
 	</body>
 </html>
